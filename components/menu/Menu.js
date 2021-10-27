@@ -7,6 +7,7 @@ import * as gtag from '../google-analytics/gtag'
 
 const Menu = ({ goToPage, goToPixel, activeElement, sezDefault, pagInterna }) => {
 
+    console.log("PROVA 27 OCT");
     const [navbar, setNavbar] = useState(false);
 
     //console.log("SEZ DEFAULT:"+sezDefault);
