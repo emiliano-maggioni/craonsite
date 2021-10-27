@@ -1,38 +1,118 @@
 import Link from 'next/link'
 import React from "react";
-import classes from "../styles/AssistenzaPage.module.scss" 
+import classes from "../styles/AssistenzaPage.module.scss";
 import Title from "components/title/Title";
-import Menu from "components/menu/Menu"
-import Image from 'next/image'
-import Footer from "components/footer/Footer" 
+import Subtitle from 'components/subtitle/subtitle';
+import Menu from "components/menu/Menu";
+import Image from 'next/image';
+import Footer from "components/footer/Footer";
+
+import HeaderPaginaInterna from 'components/header-pagina-interna/header-pagina-interna';
+import FormAssistenza from 'components/form-assistenza/form-assistenza';
+import Button from 'components/buttons/Button';
+import WhatsAppIcon from '@material-ui/icons/WhatsApp';
+import Head from 'next/head';
+import * as gtag from '../components/google-analytics/gtag'
+
+
 
 const Assistenza = () => {
-  const handler = () => {
-    alert("clicked");
-  };
+ 
+  const linkTmWin = () => {
+    window.open("http://eventi.elmec.com/docscaricabili/TeamViewerQS_it-idcz23w425.exe", '', '');
+    gtag.event({
+      action: 'dowload_teamveaw',
+      category: 'assistenza',
+      label: 'download for win',
+      value: 'download teamveawer'
+    });
 
-  return ( 
-      <div  className="internaContainer" >
-        <Menu  activeElement={"sezAssistenza"}  pagInterna={true}  />
-        <Link href={{ pathname: '/', query: { section: 'chisiamo' } }}><a>path</a></Link>
-        <section  className={`section ${classes.section} `} >  
+  }
+  const linkTmMac = () => {
+    window.open("http://eventi.elmec.com/docscaricabili/TeamViewerQS-2.zip", '', '');
+    gtag.event({
+      action: 'dowload_teamveaw',
+      category: 'assistenza',
+      label: 'download for win',
+      value: 'download teamveawer'
+    });
+
+  }
+
+  return (
+
+
+    <div className="internaContainer" >
+
+      <Head>
+        <title> Assistenza Tecnica - Craon </title>
+        <link rel="icon" href="/favicon/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
+        <link rel="manifest" href="/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+        <meta name="theme-color" content="#ffffff"></meta>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+        <meta property="og:title" content="Craon Srl Assistenza Tecnica" key="title" />
+        <meta name="description" content="Craon Assistenza tecnica per i sistemi ed i software sviluppati da Craon. Telefono Tel. +39 039.6612489 E-mail: info@craon.it " />
+        <script src="https://kit.fontawesome.com/f9028cf83e.js" crossOrigin="anonymous"></script>
+      </Head>
+      <Menu activeElement={"sezAssistenza"} pagInterna={true} />
+      <Link href={{ pathname: '/', query: { section: 'chisiamo' } }}><a>path</a></Link>
+      <section className={`section ${classes.section} `} >
+        <HeaderPaginaInterna title="Come possiamo aiutarti?"
+          subtitle="I nostri servizi di assistenza sono attivi." />
         <div className={classes.content}>
-          <Title text="Assistenza" />
-          <div className={classes.pageElements}> 
-              <div className={classes.defImage}>
-                  <Image src="/chi_siamo.jpg"  width={450} height={319}  alt="image" />
-              </div> 
-              <div className={classes.text}> 
-                <strong>Curabitur arcu erat</strong>, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Vestibulum</strong> ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. 
-                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.<br /><br /> <strong>Nulla porttitor accumsan tincidunt</strong>. Curabitur aliquet quam id dui posuere blandit. Nulla quis lorem ut libero malesuada feugiat.
-                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Nulla quis lorem ut libero malesuada feugiat. Donec rutrum congue leo eget malesuada. Cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Pellentesque.Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Sed porttitor lectus nibh.
-              </div>             
-          </div> 
+
+          <div className={classes.pageElements}>
+
+
+            <div className={classes.defImage}>
+              <FormAssistenza title="Contatta i nostri assistenti" icon="./call-center.svg" />
+            </div>
+
+            <div className={classes.text}>
+              <div className={classes.titleContact}> Contact Center</div>
+              <div className={classes.textContact}>
+                <WhatsAppIcon /> &nbsp;  <label>+39 039.6612489</label>
+              </div>
+              <div className={classes.titleContact}> Supporto da remoto</div>
+              <div className={classes.textRemote}>
+                Scarica la versione di Team Viewer per il tuo sistema operativo per consentire ai nostri tecnici dell'Helpdesk di operare da remoto sul tuo dispositivo PC o Apple
+                  <br></br>
+                <br></br>
+                <a href="https://www.teamviewer.com/it/download/windows/" className="btn button" target="_blank" > Assistenza Remota (win)</a>
+                <br></br>
+                <br></br>
+                <a href="https://www.teamviewer.com/it/download/mac-os/" className="btn button" target="_blank"> Assistenza Remota (mac)</a>
+                <br></br>
+                <br></br>
+                <a href="https://www.teamviewer.com/it/download/linux/" className="btn button" target="_blank">Assistenza remota (linux)</a>
+              </div>
+            </div>
+
+
+         
           </div>
-        </section>
-        <Footer   pagInterna={true} />
-      </div>
-    
+        </div>
+      </section>
+      <Footer pagInterna={true} />
+    </div>
+
   );
 };
 

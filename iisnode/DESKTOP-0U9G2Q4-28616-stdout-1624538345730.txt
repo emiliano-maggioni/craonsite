@@ -1,0 +1,3 @@
+info  - Loaded env from C:\Users\fraan\Documents\craonsite-modifiche_giugno\.env
+info  - Using webpack 4. Reason: future.webpack5 option not enabled https://nextjs.org/docs/messages/webpack5
+> Ready on http://localhost:\\.\pipe\5889781d-bed2-4575-bfab-353c73748def

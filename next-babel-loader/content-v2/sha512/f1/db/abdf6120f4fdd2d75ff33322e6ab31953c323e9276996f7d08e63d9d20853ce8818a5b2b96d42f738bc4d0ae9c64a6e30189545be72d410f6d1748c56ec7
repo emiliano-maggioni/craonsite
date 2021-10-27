@@ -1,0 +1,1 @@
+{"ast":null,"code":"class ErrorHandler extends Error {\n  constructor(message, statusCode) {\n    super(message);\n    this.statusCode = statusCode;\n    Error.captureStackTrace(this, this.constructor);\n  }\n\n}\n\nexport default ErrorHandler;","map":null,"metadata":{},"sourceType":"module"}

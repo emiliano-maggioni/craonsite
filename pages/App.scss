@@ -8,7 +8,7 @@ html {
 body {
   font-family: 'Lato', sans-serif;
   font-weight:300;
-  color:#696259;
+  color: #696259 !important;
 }
 
 .section{
@@ -50,7 +50,7 @@ body {
 
 
 .internaContainer .section{
-  margin-top: 75px;
+  margin-top: 65px;
   min-height: 65vh;
   padding-bottom: 4.5rem;
 }
@@ -76,12 +76,13 @@ body {
   font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   user-select: none;
+  margin-top: 0.1rem;
 }
 .button {
   padding: 1rem;
 
 }
-
+ 
 .button:hover, .smallButton:hover {
   background: #fff;
   color: #2296d4;
@@ -156,9 +157,22 @@ div.textField{
   min-height: 11rem;
   padding-bottom: 0.5rem;
 }
-
+.bartrasparent{
+  display: flex;
+  width: 100%;
+  min-height: 12vh;
+ 
+}
 
 //CAROUSEL
+.rec-arrow {
+ 
+  width: 30px!important;
+  height: 30px!important;;
+  min-width: 30px!important;;
+  line-height: 30px!important;;
+ 
+}
 
 button.rec-arrow{ display:none; }
 
@@ -173,3 +187,144 @@ button.rec-dot_active{
   background-color: #2296d4;
   box-shadow: 0 0 1px 3px rgb(34 150 212);
 }
+ 
+.buttonDecline{
+  background-color: rgb(182, 61, 61);
+  padding: 1rem;
+  color: #fff;
+}
+
+@media screen and (max-width: 800px){
+
+  button.rec-arrow{ display:block; };
+ 
+}
+
+//ALLIBO
+
+.aw_jobSlider.cs .aw_intro /*Paragrafo di introduzione*/
+    {
+      position: relative;
+      top: 0px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: large;
+      max-width: 90vw;
+      letter-spacing: 0rem;
+      color: #696259;
+      margin: 1rem auto;
+      
+     }
+     .aw_jobSlider.cs .aw_vieport /*Paragrafo di introduzione*/
+    {
+      height: 400px;
+      text-align: center;
+      text-decoration: none;
+      border: none;
+      outline: none;
+  
+     }
+
+     .aw_jobPosting{
+       margin-left: 3rem;
+       padding: 0rem;
+     }
+.aw_jobSlider.cs .aw_jobPosting /*Contenitore dell'Annuncio*/
+    {
+     background-color: rgba(255, 255, 255, 0.842);
+     background-image: url(/logo-craon.png);
+     background-repeat: no-repeat;
+     background-position-x: center;
+     background-position-y: calc(100% - 20px);
+      border-radius: 6px;
+      max-width: 250px;
+      height: 200px;
+      border: 1px solid rgb(201, 201, 201);
+      border-bottom: 1px solid grey;
+      margin-left: 0.9rem;
+      margin-right: 0.9rem;
+      padding: 0rem;
+     
+     }
+     .aw_jobSlider.cs .aw_jobPosting:hover /*Contenitore dell'Annuncio*/
+     {
+        background-color: #c0deee;
+        color: white!important;
+        font-weight: bold;
+     }  
+.aw_jobSlider.cs .aw_jobPosting .aw_title /*Titolo dell'Annuncio*/
+    {
+      color: #fff;
+      height: 60px;
+      border-bottom: 2px solid rgb(187, 187, 187);
+      display: block;
+     // background-image: url(/icone/craon_logo_wt.png), linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(34,150,212,1) 74%, rgba(34,150,212,1) 100%);
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-origin: border-box;
+      background-position: left center;
+      background-size:calc(100% - 200px);
+      text-decoration: grey;
+      background-color:  rgb(34, 150, 212, 1);
+      padding: 0.5rem;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+      position: relative;
+      top: 0px;
+      transition: all ease 0.3s;
+      mix-blend-mode: multiply;
+      font-size: 1rem;
+     }
+.aw_jobSlider.cs .aw_jobPosting .aw_location /*Sede di lavoro*/
+    {
+      display: flex;
+      border-top: grey;
+      color: #696259;
+      flex-direction: column;
+      align-content: space-between;
+      justify-content: flex-end;
+      align-items: center;
+      transition: all 0.3s;
+    
+     }
+     .aw_jobSlider.cs .aw_jobPosting .aw_location:hover /*Sede di lavoro*/
+    {
+   
+      color: #fff;
+    
+     }
+     .aw_jobSlider.cs .aw_jobPosting  .aw_rush{
+    display: block!important;
+  }
+.aw_jobSlider.cs .aw_jobPosting .aw_pin /*Icona segnaposto Sede di lavoro*/
+    { }
+.aw_jobSlider.cs .aw_jobPosting:hover /*MouseOver effect Annuncio*/
+    { }
+.aw_jobSlider.cs .aw_dot /*Segnaposto delle Slide*/
+    {
+      color: #fff;
+      height: 10px;
+      width: 10px;
+      //margin-left: 1rem;
+     // border-radius: 20px;
+      background: linear-gradient(180deg, rgb(20, 132, 197) 0%, rgb(99, 162, 196) 82%, rgb(113, 160, 224) 100%);
+      //border: 2px solid rgb(94, 134, 185);
+     }
+.aw_jobSlider.cs .aw_dot.is-selected /*Segnaposto Slide corrente*/
+    { 
+      background-color: #fff;
+    }
+.aw_rush{
+  display: block!important;
+}
+
+    .tzs_show-page-dots{
+      position: relative;
+      bottom: -10vh;
+      margin: 0 auto;
+    }

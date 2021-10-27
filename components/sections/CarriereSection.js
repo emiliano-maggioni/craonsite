@@ -1,108 +1,44 @@
-import React from "react";
+import React, { useEffect, useState } from 'react';
 import classes from "./CarriereSection.module.scss";
 import Title from "components/title/Title";
 import Carousel, { consts } from "react-elastic-carousel";
 import Image from "next/image";
 import CarrieraCard from "components/card-carriera/Card";
+import AlliboDati from '../../allibo/AlliboData';
 
-const CarriereSection = () => {
-  const handler = () => {
-    alert("clicked");
-  };
+
+
+
+
+
+const CarriereSection = ({ attivo }) => {
+ 
+  if(attivo === 'carriere'){
+  
+    // location.reload(false);
+ 
+  }
+ 
+  var scriptAllibo = '<script src="https://joblink.allibo.com/ats4/Widget/jq"></script>' +
+    '<script src="https://joblink.allibo.com/ats4/Widget/js"></script>' +
+    '<a href="https://allibo.com" data-allibo="https://joblink.allibo.com/ats4/Widget/connector.aspx?DM=AkAgVVF3SaayKyCyStg6S9qATVXtJSr6vSo3gHErQrg%3D&SG=2&FT=481&LN=IT"rel="follow" style="text-decoration:none; cursor:default">-</a>';
+  //console.log('attivo', attivo)
+
+ 
 
   return (
-    <div className={`section ${classes.container}`}>
-              <Title text="Area Carriere" />
-    <div className={classes.bgcontainer}>
+    <div className={`section ${classes.container}`} >
+      <Title text="Area Carriere" />
+      <div className={classes.bgcontainer}>
         <div className={classes.content}>
-  
-          <Carousel itemsToShow={4}  enableAutoPlay autoPlaySpeed={3750}>
-          <CarrieraCard
-              title="Senior front end developer"
-              location="Veduggio con colzano"
-              data="04/03/2021"
-              showButton={true}
-              buttonText="vedi"
-              onClick={handler}
-            />
-          <CarrieraCard
-              title="Senior developer Angular"
-              location="Vimercate"
-              data="10/05/2021"
-              showButton={true}
-              buttonText="vedi"
-              onClick={handler}
-            />
-          <CarrieraCard
-              title="Full stack developer"
-              location="Rancate"
-              data="09/04/2021"
-              showButton={true}
-              buttonText="vedi"
-              onClick={handler}
-            />
-           <CarrieraCard
-              title="Back end Junior Developer"
-              location="Milano"
-              data="15/04/2021"
-              showButton={true}
-              buttonText="vedi"
-              onClick={handler}
-            />
-            <CarrieraCard
-              title="Junior project manager"
-              location="Rancate"
-              data="09/04/2021"
-              showButton={true}
-              buttonText="vedi"
-              onClick={handler}
-            />
-          <CarrieraCard
-              title="Google marketing manager"
-              location="Sesto San Giovanni"
-              data="22/01/2021"
-              showButton={true}
-              buttonText="vedi"
-              onClick={handler}
-            />
-           <CarrieraCard
-              title="Senior front end developer"
-              location="Veduggio con colzano"
-              data="04/03/2021"
-              showButton={true}
-              buttonText="vedi"
-              onClick={handler}
-            />
-          <CarrieraCard
-              title="Senior developer Angular"
-              location="Vimercate"
-              data="10/05/2021"
-              showButton={true}
-              buttonText="vedi"
-              onClick={handler}
-            />
-          <CarrieraCard
-              title="Full stack developer"
-              location="Rancate"
-              data="09/04/2021"
-              showButton={true}
-              buttonText="vedi"
-              onClick={handler}
-            />
-          <CarrieraCard
-              title="Google marketing manager"
-              location="Sesto San Giovanni"
-              data="22/01/2021"
-              showButton={true}
-              buttonText="vedi"
-              onClick={handler}
-            />
-          </Carousel>
+          <AlliboDati />
+        {/* <div  dangerouslySetInnerHTML={{ __html: scriptAllibo }}></div> */}
         </div>
-    </div>
-
+      </div>
     </div>
   );
 };
 
 export default CarriereSection;
+
+ 

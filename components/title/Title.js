@@ -1,10 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
+import classes from 'components/title/Title.module.scss';
 
 const Title = ({text}) => {
-    return( <h2  className="titleSection">{text}</h2>); 
+    return( <div className={classes.titleSection} >{text}</div>); 
 }
-
+ 
 Title.propTypes = {
     text: PropTypes.string.isRequired,
 };

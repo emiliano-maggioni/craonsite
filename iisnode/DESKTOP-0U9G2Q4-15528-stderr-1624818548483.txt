@@ -1,0 +1,9 @@
+(node:15528) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Application has thrown an uncaught exception and is terminated:
+Error: Could not find a production build in the 'C:\Users\fraan\Documents\craonsite-modifiche_giugno\.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id
+    at Server.readBuildId (C:\Users\fraan\Documents\craonsite-modifiche_giugno\node_modules\next\dist\next-server\server\next-server.js:151:355)
+    at new Server (C:\Users\fraan\Documents\craonsite-modifiche_giugno\node_modules\next\dist\next-server\server\next-server.js:3:120)
+    at NextServer.createServer (C:\Users\fraan\Documents\craonsite-modifiche_giugno\node_modules\next\dist\server\next.js:1:2745)
+    at C:\Users\fraan\Documents\craonsite-modifiche_giugno\node_modules\next\dist\server\next.js:1:3143
+    at async NextServer.prepare (C:\Users\fraan\Documents\craonsite-modifiche_giugno\node_modules\next\dist\server\next.js:1:2495)

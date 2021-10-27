@@ -1,0 +1,21 @@
+{
+  "/MainPage copy": "pages/MainPage copy.html",
+  "/MainPage": "pages/MainPage.html",
+  "/_app": "pages/_app.js",
+  "/_document": "pages/_document.js",
+  "/_error": "pages/_error.js",
+  "/api/OLD_mailer": "pages/api/OLD_mailer.js",
+  "/api/mailer": "pages/api/mailer.js",
+  "/assistenza": "pages/assistenza.html",
+  "/errorPage": "pages/errorPage.html",
+  "/": "pages/index.html",
+  "/servizi/Appmobile": "pages/servizi/Appmobile.html",
+  "/servizi/B2B": "pages/servizi/B2B.html",
+  "/servizi/DatabaseManagement": "pages/servizi/DatabaseManagement.html",
+  "/servizi/Enterprise": "pages/servizi/Enterprise.html",
+  "/servizi/Itsecurity": "pages/servizi/Itsecurity.html",
+  "/servizi/SviluppoSoftware": "pages/servizi/SviluppoSoftware.html",
+  "/servizi/SystemIntegration": "pages/servizi/SystemIntegration.html",
+  "/servizi/SystemIntegration_ ol": "pages/servizi/SystemIntegration_ ol.html",
+  "/terminiecondizioni": "pages/terminiecondizioni.html"
+}

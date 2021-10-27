@@ -1,0 +1,11 @@
+module.exports = {
+  images: {
+    domains: ["www.craon.it"],
+    path: ['/public'
+    ]
+  },
+  publicRuntimeConfig: {
+    staticFolder: '/public',
+  },
+
+};

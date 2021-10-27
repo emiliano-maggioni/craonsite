@@ -1,9 +1,12 @@
-.section{ 
-  background: url(/bg_home_small.jpg) no-repeat center -3rem;
-  padding-top: 17rem;
+.section{  
+  
+  padding-top: 0rem;
+ 
 
 }
 
+ 
+ 
 .content{
   display: flex;
   align-items: center;
@@ -13,28 +16,166 @@
   flex-direction: column;
   padding: 0rem 1rem;
   box-sizing: border-box;
+  position: relative;
+  top: 2rem;
 }
 
 .pageElements{
   display:flex;
   width: 100%;  
-  max-width: 62rem;
+  max-width: 83rem;
   padding-right:0.8rem;
   justify-content: space-between; 
+ 
+  flex-direction: row;
+  top: 2rem;
 }
+
 .defImage{
   display:flex;
-  flex:1; 
+ 
+  flex-direction: row;
   justify-content: flex-end;
   padding-right:0.8rem;
   box-sizing: border-box;   
 }
 
 .text{
-  flex: 1;
+  flex: 1 1 100%;
   padding-left: 0.8rem;
   box-sizing: border-box;
   color: #696259;
   font-family: "Lato", sans-serif;
   line-height: 1.6rem;
 }
+
+
+.titleContact{
+  text-align: left;
+  text-transform: uppercase;
+  font-size: calc(1vh + 1vw);
+  font-weight: bold;
+  color: #2096d4;
+  /* border-bottom: 2px solid; */
+  padding-bottom: 1vh;
+}
+ 
+.textContact{
+  display: flex;
+  padding: 0.5rem;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: calc(2vh + 2vw);
+}
+
+.textRemote{
+  display: block;
+  padding: 0.5rem;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: calc(2vh + 2vw);
+}
+
+
+  /*PRIVACY POLICY TERMINI */
+
+  .containerPolicy {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: nowrap;
+    width: 100%;
+    max-width: 1366px;
+    flex-direction: row;
+    padding: 0rem 1rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    top: 2rem;
+    align-content: stretch;
+    justify-content: flex-start;
+    
+    }
+
+.itemPolicy:nth-child(1) {
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    }
+
+.itemPolicy:nth-child(2) {
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    }
+
+.itemPolicy:nth-child(3) {
+    -webkit-order: 3;
+    -ms-flex-order: 3;
+    order: 3;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    }
+
+ .itemPolicy h3{
+  display: flex;
+  padding: 1rem;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  justify-content: flex-start;
+ }   
+ .itemPolicy h5{
+  display: flex;
+  padding-left: 1rem;
+ }  
+ .itemPolicy p{
+  display: flex;
+  max-width: 300px;
+  padding: 1rem;
+ }   
+
+
+ @media screen and (max-width: 769px) and (orientation: portrait){
+
+  .pageElements{
+    display: flex;
+    width: 100%;
+    max-width: 80rem;
+   // padding-right: 0.8rem;
+    justify-content: center;
+    flex-direction: column;
+    top: 2rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: space-around;
+  }
+
+  .defImage{
+    padding-right: 0rem;
+    padding-left: 0.8rem;
+    margin-bottom: 1rem;
+  }
+  .containerPolicy{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: flex-start;
+}
+ }

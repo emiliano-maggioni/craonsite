@@ -11,11 +11,16 @@
     justify-content: space-between;
     z-index:9;
     color:#696259;
+    -webkit-box-shadow: 0px 16px 32px -12px rgba(125,125,125,0.66); 
+    box-shadow: 0px 16px 32px -12px rgba(125,125,125,0.66);
  }
  .menuContainer > figure{
     display: flex;
     align-items: center;
     cursor: pointer;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
  }
  .logoCraon{
     margin-left:2rem;
@@ -26,10 +31,18 @@
     animation: show 1.5s ease-in;
 }
 .logoCCA img{
-    width: 100%;
+    width: 70%;
     animation: show2 1.5s ease-in; 
 }
-
+.logoB2B{
+    position: relative;
+    right: -2vw;
+     cursor: default!important;
+}
+.logoB2B img{
+    width: 70%;
+    animation: show2 1.5s ease-in; 
+}
 @keyframes show{
     0% {opacity:0;}
     100% {opacity:1;}
@@ -66,8 +79,11 @@
  .navigation{
     display: flex;
     height: 100%;
-    flex: 1;
-    justify-content: center;
+    flex: 1 1;
+    justify-content: center;  
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: center;
  }
 
 .link{
@@ -83,9 +99,282 @@
     transition: all 0.26s linear;
     user-select: none;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif!important;
 }
 .linkActive, .link:hover{
     background:#2296d4;
     color:#fff;
+  
 }
+
+
+.burger{
+    display: none;
+}
+.burger:nth-child(1){
+        
+    animation: show2 0.5s ease-in; 
+}
+.burger:nth-child(2){
+    animation: show2 0.5s ease-in; 
+}
+.burger:nth-child(3){
+    animation: show2 0.5s ease-in; 
+}
+
+.menuContainerMobile{
+    display: none;
+}
+.menuContainerMobile.open{
+    display: none;
+}
+
+.w100{
+    width: 100%;
+}
+
+@media screen and (max-width: 1024px) and (orientation: portrait) {
+    .navigation {
+        display: none;
+
+    }
+
+    .w100{
+        width: 100%;
+    }
+
+    .burger{
+        display: flex;
+        position: absolute;
+        right: 2rem;
+        top: 1.5rem;
+        align-content: center;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: center;
+       
+    }
+    .burger:hover{
+        cursor: pointer;
+    }
+
+    .burger > i{
+        font-size: calc(2vh + 2vw);
+        color: #2a96d4;
+        transition:  all ease-in-out 0.4s;
+        z-index: 999;
+    }
+
+    .burger:nth-child(1){
+        
+        animation: show2 0.5s ease-in; 
+    }
+    .burger:nth-child(2){
+        animation: show2 0.5s ease-in; 
+    }
+    .burger:nth-child(3){
+        animation: show2 0.5s ease-in; 
+    }
+    
+
+
+
+    .menuContainerMobile{
+        display: block;
+        position: absolute;
+        top: 88px;
+        right: 0;
+        left:0;
+        animation: show2 0.5s ease-in; 
+        width: 100%;
+        background-color: white;
+        padding-bottom: 1rem;
+        border-bottom: 4px solid #2296d4;
+ 
+    }
+ 
+    .menuContainerMobile > nav {
+        width: 100%;
+    }
+
+
+    .link{
+        position: relative;
+        top: 0;
+        background: #ffffff;
+        color: #727273;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        cursor: pointer;
+        padding: 1.2rem 1rem;
+        font-size: 1rem;
+        letter-spacing: 0.09rem;
+        font-weight: 400;
+        -webkit-transition: all 0.26s linear;
+        transition: all 0.26s linear;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        text-align: center;
+        font-family: "Poppins", sans-serif !important;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: nowrap;
+        font-size: larger;
+    }
+    .linkActive, .link:hover{
+        background:#2296d4;
+        color:#fff;
+      
+    }
+    
+    
+    .logoCraon{
+        margin-left: 1rem;
+    }
+
+    .logoB2B img{
+        display: none;
+    }
+
+
+    .logoCCA img{
+        display: none;
+    }
+
+    .logoCCAmobile > img{
+        padding: 0.2rem 1rem;
+    }
+    .logoB2Bmobile > img{
+        padding: 0.2rem 1rem;
+    }
+
+}
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+    .navigation {
+        display: none;
+
+    }
+
+    .w100{
+        width: 100%;
+    }
+
+    .burger{
+        display: flex;
+        position: absolute;
+        right: 2rem;
+        top: 1.5rem;
+        align-content: center;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: center;
+       
+    }
+    .burger:hover{
+        cursor: pointer;
+    }
+
+    .burger > i{
+        font-size: calc(2vh + 2vw);
+        color: #2a96d4;
+        transition:  all ease-in-out 0.4s;
+        z-index: 999;
+    }
+
+    .burger:nth-child(1){
+        
+        animation: show2 0.5s ease-in; 
+    }
+    .burger:nth-child(2){
+        animation: show2 0.5s ease-in; 
+    }
+    .burger:nth-child(3){
+        animation: show2 0.5s ease-in; 
+    }
+    
+
+
+
+    .menuContainerMobile{
+        display: block;
+        position: absolute;
+        top: 88px;
+        right: 0;
+        left:0;
+        animation: show2 0.5s ease-in; 
+        width: 100%;
+        background-color: white;
+        padding-bottom: 1rem;
+        border-bottom: 4px solid #2296d4;
+ 
+    }
+ 
+    .menuContainerMobile > nav {
+        width: 100%;
+    }
+
+
+    .link{
+        position: relative;
+        top: 0;
+        background: #ffffff;
+        color: #727273;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        cursor: pointer;
+        padding: 0.2rem 1rem;
+        font-size: 1rem;
+        letter-spacing: 0.09rem;
+        font-weight: 400;
+        -webkit-transition: all 0.26s linear;
+        transition: all 0.26s linear;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        text-align: center;
+        font-family: "Poppins", sans-serif !important;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: nowrap;
+        font-size: small;
+
+    }
+    .linkActive, .link:hover{
+        background:#2296d4;
+        color:#fff;
+      
+    }
+    
+    
+    .logoCraon{
+        margin-left: 1rem;
+    }
+
+    .logoB2B img{
+        display: none;
+    }
+
+
+    .logoCCA img{
+        display: none;
+    }
+    .logoCCAmobile > img{
+        padding: 0.2rem 1rem;
+    }
+    .logoB2Bmobile > img{
+        padding: 0.2rem 1rem;
+    }
+}
+
+ @media screen and (min-width: 1000px) and (max-width: 1250px) {
+    .link{
+      
+        font-size: 0.7rem;
+        letter-spacing: 0rem;
+ 
+
+    }
+ }

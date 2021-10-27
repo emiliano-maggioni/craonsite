@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { jsx as _jsx } from \"react/jsx-runtime\";\nimport React from \"react\";\nimport classes from 'components/title/Title.module.scss';\n\nconst Title = ({\n  text\n}) => {\n  return /*#__PURE__*/_jsx(\"div\", {\n    className: classes.titleSection,\n    children: text\n  });\n};\n\nexport default Title;","map":null,"metadata":{},"sourceType":"module"}

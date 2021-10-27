@@ -1,0 +1,1 @@
+{"ast":null,"code":"import * as ReactGA from \"react-ga\";\nexport const initGA = id => {\n  if (true) {\n    ReactGA.initialize(id);\n  }\n};","map":null,"metadata":{},"sourceType":"module"}

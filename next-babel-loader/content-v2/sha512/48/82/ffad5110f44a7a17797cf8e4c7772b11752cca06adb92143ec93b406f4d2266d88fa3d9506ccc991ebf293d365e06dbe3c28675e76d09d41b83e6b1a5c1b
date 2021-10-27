@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { jsx as _jsx } from \"react/jsx-runtime\";\nimport React from \"react\";\n\nconst Subtitle = ({\n  text\n}) => {\n  return /*#__PURE__*/_jsx(\"h4\", {\n    className: \"subtitle\",\n    children: text\n  });\n};\n\nexport default Subtitle;","map":null,"metadata":{},"sourceType":"module"}

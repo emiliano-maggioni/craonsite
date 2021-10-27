@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { jsx as _jsx } from \"react/jsx-runtime\";\nimport React from 'react';\nimport '../styles/Errorpage.module.scss';\n\nvar ErrorPage = function ErrorPage() {\n  return /*#__PURE__*/_jsx(\"div\", {});\n};\n\nexport default ErrorPage;","map":null,"metadata":{},"sourceType":"module"}

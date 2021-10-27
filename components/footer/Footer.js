@@ -44,7 +44,7 @@ const Footer = ({goToPage, pagInterna}) => {
                     20871 Vimercate (MB)<br /><br />
                     <strong>Partita Iva: </strong> 02820820963<br />
                     <strong>Tel: </strong> 039.6612489<br />
-                    <strong>Email: </strong><a href="mailto:craon@craon.it">informazioni@craon.it</a>
+                    <strong>Email: </strong><a href="mailto:info@craon.it">info@craon.it</a>
                 </p>
                 <ul className={classes.social}  >
                     <li  onClick={() => window.open('https://www.facebook.com/craonIT','','')} ><img src="/logo-fb-grey.png" /></li>
@@ -54,7 +54,7 @@ const Footer = ({goToPage, pagInterna}) => {
             </div>
             <div>
                 <div  className={classes.infoRight}>
-                    <Image src="/logo-iqnet.png"  width={117} height={44}  alt="image" />
+                    <img src="/logo-iqnet.png" className="img-fluid d-block" width="100px" alt="CERTIFICATO IQNET" />
                    ISO 9001:2015<br />
                    Quality Management System<br />
                    <FooterButton text="AREA RISERVATA" onClick={()=>  window.open('http://statini.craon.it/','','') }><LockOutlinedIcon /></FooterButton>

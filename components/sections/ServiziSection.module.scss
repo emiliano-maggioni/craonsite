@@ -1,5 +1,12 @@
 .sectionServizi {
   padding-bottom: 0px;
+ // background: url(/bg_section_6.svg) no-repeat center top;;
+  background-attachment: scroll;
+  background-origin: border-box;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .container {
     width:100%;
@@ -10,6 +17,8 @@
     color:#fff;
     justify-content: center;
     align-items: center;
+ 
+    
   }
   .content{
     display: flex;
@@ -20,6 +29,8 @@
     flex-direction: column;
     padding: 0rem 1rem;
     box-sizing: border-box;
+
+
 }
 .cardGrid{
   display:flex;
@@ -31,8 +42,69 @@
   display:flex;
   width: 33.3%;
   justify-content: center;
+ 
   margin-bottom: 3rem;
   margin-top: 0.5rem;
+
 }
 
 
+.titleSection {
+  display: flex;
+  height: auto;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #2296d4;
+  font-size: 3.2rem;
+  letter-spacing: 0.22rem;
+  text-align: center;
+  mix-blend-mode: normal;
+  padding: 1rem;
+  -webkit-margin-after: 2vh;
+  margin-block-end: 2vh;
+}
+@media screen and (max-width:820px) {
+ .container{
+  width: 17rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #e0d9d1;
+  border-radius: 6px;
+  background: white;
+  flex-wrap: nowrap;
+  align-items: center;
+ }
+ .title{
+  min-height: 80px;
+
+}
+}
+@media screen and (max-width:500px) {
+  .cardGrid{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-bottom: 1rem;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+    justify-content: flex-end;
+  }
+
+  .cardContainer{
+    width: 100%;
+  }
+
+  .titleSection{
+    font-size: 2rem;
+  }
+  
+}
